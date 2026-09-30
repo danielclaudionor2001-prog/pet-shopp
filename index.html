@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet Chaveiro - Pet Shop, Rações e Chaveiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Pet Chaveiro">
+        <img src="assets/images/logo-novo.png" alt="Pet Chaveiro">
+      </a>
+
+      <button id="menuToggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#catalogo" data-catalog="pet-shop">Pet Shop</a>
+        <a href="#catalogo" data-catalog="racoes">Rações</a>
+        <a href="#catalogo" data-catalog="banho-tosa">Banho e Tosa</a>
+        <a href="#catalogo" data-catalog="chaveiro">Chaveiro</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="header-whatsapp" href="https://wa.me/5511980358689" target="_blank" rel="noopener">
+        <img src="assets/images/wh-icon.svg" alt="">
+        <span>Fale no WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-label="Pet Chaveiro">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <h1>Tudo para o seu pet<br>e serviços de chaveiro <strong>em um só lugar!</strong></h1>
+
+          <div class="hero-services" aria-label="Serviços">
+            <a href="#catalogo" data-catalog="racoes">
+              <img src="assets/images/paw.svg" alt="">
+              <span>Rações</span>
+            </a>
+            <a href="#catalogo" data-catalog="pet-shop">
+              <img src="assets/images/toys.svg" alt="">
+              <span>Acessórios</span>
+            </a>
+            <a href="#catalogo" data-catalog="banho-tosa">
+              <img src="assets/images/scissors.svg" alt="">
+              <span>Banho e Tosa</span>
+            </a>
+            <a href="#catalogo" data-catalog="chaveiro">
+              <img src="assets/images/key.svg" alt="">
+              <span>Chaves e Fechaduras</span>
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-whatsapp" href="https://wa.me/5511980358689" target="_blank" rel="noopener">
+              <img src="assets/images/wh-icon.svg" alt="">
+              <span>Falar no WhatsApp</span>
+            </a>
+            <a class="btn btn-route" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Embaixatriz%20Dora%20de%20Vasconcelos%2C%20666%2C%20Vila%20do%20Castelo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004438-240" target="_blank" rel="noopener">
+              <span class="pin-icon" aria-hidden="true"></span>
+              <span>Como chegar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-strip shell" id="pet-shop" aria-label="Categorias">
+      <article class="service-card">
+        <img class="service-photo" src="assets/images/icon-petshop.png" alt="Produtos de pet shop">
+        <div class="service-body">
+          <h2>Pet Shop</h2>
+          <p>Acessórios, brinquedos, higiene e muito mais para o seu pet.</p>
+          <a class="service-button orange" href="#catalogo" data-catalog="pet-shop">Ver produtos</a>
+        </div>
+      </article>
+
+      <article class="service-card" id="racoes">
+        <img class="service-photo" src="assets/images/icon-feed.png" alt="Prateleiras com rações">
+        <div class="service-body">
+          <h2>Casa de Ração</h2>
+          <p>Diversas marcas de rações para cães, gatos e outros animais.</p>
+          <a class="service-button brown" href="#catalogo" data-catalog="racoes">Ver rações</a>
+        </div>
+      </article>
+
+      <article class="service-card" id="banho-tosa">
+        <img class="service-photo" src="assets/images/icon-grooming.png" alt="Cachorro no banho e tosa">
+        <div class="service-body">
+          <h2>Banho e Tosa</h2>
+          <p>Seu pet limpo, cheiroso e bem cuidado.</p>
+          <a class="service-button blue" href="#catalogo" data-catalog="banho-tosa">Ver serviços</a>
+        </div>
+      </article>
+
+      <article class="service-card" id="chaveiro">
+        <img class="service-photo" src="assets/images/icon-keys.png" alt="Chaves residenciais e automotivas">
+        <div class="service-body">
+          <h2>Chaveiro</h2>
+          <p>Cópias de chaves, chaves automotivas, residenciais, fechaduras e muito mais.</p>
+          <a class="service-button yellow" href="#catalogo" data-catalog="chaveiro">Ver serviços</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="catalog-section" id="catalogo" aria-labelledby="catalogTitle">
+      <div class="shell">
+        <div class="catalog-heading">
+          <div>
+            <span class="section-kicker">Produtos e serviços</span>
+            <h2 id="catalogTitle">Encontre o que você precisa</h2>
+          </div>
+          <p>Escolha uma categoria para ver todas as opções disponíveis.</p>
+        </div>
+
+        <div class="catalog-tabs" role="tablist" aria-label="Categorias do catálogo">
+          <button class="catalog-tab is-active" id="tab-pet-shop" type="button" role="tab" aria-selected="true" aria-controls="panel-pet-shop" data-category="pet-shop">Pet Shop</button>
+          <button class="catalog-tab" id="tab-racoes" type="button" role="tab" aria-selected="false" aria-controls="panel-racoes" data-category="racoes">Casa de Ração</button>
+          <button class="catalog-tab" id="tab-banho-tosa" type="button" role="tab" aria-selected="false" aria-controls="panel-banho-tosa" data-category="banho-tosa">Banho e Tosa</button>
+          <button class="catalog-tab" id="tab-chaveiro" type="button" role="tab" aria-selected="false" aria-controls="panel-chaveiro" data-category="chaveiro">Chaveiro</button>
+        </div>
+
+        <div class="catalog-panel is-active" id="panel-pet-shop" role="tabpanel" aria-labelledby="tab-pet-shop" data-panel="pet-shop">
+          <div class="catalog-panel-intro">
+            <img src="assets/images/icon-petshop.png" alt="Brinquedos e acessórios para animais">
+            <div><span>Pet Shop</span><strong>Tudo para o bem-estar do seu pet</strong></div>
+          </div>
+          <div class="catalog-items">
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20brinquedos%20para%20pets." target="_blank" rel="noopener"><img src="assets/images/toys.svg" alt=""><strong>Brinquedos</strong><span>Bolas, mordedores e diversão</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20coleiras%20e%20guias." target="_blank" rel="noopener"><img src="assets/images/paw.svg" alt=""><strong>Coleiras e guias</strong><span>Passeios seguros e confortáveis</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20produtos%20de%20higiene%20pet." target="_blank" rel="noopener"><img src="assets/images/pet-care.svg" alt=""><strong>Higiene</strong><span>Shampoos e cuidados diários</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20camas%20e%20casinhas%20para%20pets." target="_blank" rel="noopener"><img src="assets/images/pet-care.svg" alt=""><strong>Camas e casinhas</strong><span>Conforto para cães e gatos</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20comedouros%20e%20bebedouros." target="_blank" rel="noopener"><img src="assets/images/bowl.svg" alt=""><strong>Comedouros</strong><span>Potes e bebedouros</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20acess%C3%B3rios%20para%20pets." target="_blank" rel="noopener"><img src="assets/images/paw.svg" alt=""><strong>Acessórios</strong><span>Itens para todas as rotinas</span></a>
+          </div>
+        </div>
+
+        <div class="catalog-panel" id="panel-racoes" role="tabpanel" aria-labelledby="tab-racoes" data-panel="racoes" hidden>
+          <div class="catalog-panel-intro">
+            <img src="assets/images/icon-feed.png" alt="Prateleiras com rações">
+            <div><span>Casa de Ração</span><strong>Alimentação para cada fase da vida</strong></div>
+          </div>
+          <div class="catalog-items">
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20ra%C3%A7%C3%B5es%20para%20c%C3%A3es." target="_blank" rel="noopener"><img src="assets/images/paw.svg" alt=""><strong>Ração para cães</strong><span>Filhotes, adultos e idosos</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20ra%C3%A7%C3%B5es%20para%20gatos." target="_blank" rel="noopener"><img src="assets/images/pet-care.svg" alt=""><strong>Ração para gatos</strong><span>Adultos, filhotes e castrados</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20ra%C3%A7%C3%B5es%20premium." target="_blank" rel="noopener"><img src="assets/images/kibble.svg" alt=""><strong>Premium</strong><span>Nutrição de alta qualidade</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20ra%C3%A7%C3%B5es%20%C3%BAmidas." target="_blank" rel="noopener"><img src="assets/images/wet-food.svg" alt=""><strong>Ração úmida</strong><span>Sachês e latas</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20petiscos." target="_blank" rel="noopener"><img src="assets/images/bowl.svg" alt=""><strong>Petiscos</strong><span>Recompensas saborosas</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20ra%C3%A7%C3%B5es%20especiais%20ou%20medicamentosas." target="_blank" rel="noopener"><img src="assets/images/pet-care.svg" alt=""><strong>Linhas especiais</strong><span>Consulte disponibilidade</span></a>
+          </div>
+        </div>
+
+        <div class="catalog-panel" id="panel-banho-tosa" role="tabpanel" aria-labelledby="tab-banho-tosa" data-panel="banho-tosa" hidden>
+          <div class="catalog-panel-intro">
+            <img src="assets/images/icon-grooming.png" alt="Cachorro no banho e tosa">
+            <div><span>Banho e Tosa</span><strong>Cuidado completo com muito carinho</strong></div>
+          </div>
+          <div class="catalog-items">
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20banho." target="_blank" rel="noopener"><img src="assets/images/paw.svg" alt=""><strong>Banho</strong><span>Limpeza e secagem cuidadosa</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20tosa%20higi%C3%AAnica." target="_blank" rel="noopener"><img src="assets/images/scissors.svg" alt=""><strong>Tosa higiênica</strong><span>Conforto e higiene</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20tosa%20completa." target="_blank" rel="noopener"><img src="assets/images/scissors.svg" alt=""><strong>Tosa completa</strong><span>Acabamento conforme a raça</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20hidrata%C3%A7%C3%A3o%20para%20meu%20pet." target="_blank" rel="noopener"><img src="assets/images/pet-care.svg" alt=""><strong>Hidratação</strong><span>Pelagem macia e saudável</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20corte%20de%20unhas." target="_blank" rel="noopener"><img src="assets/images/paw.svg" alt=""><strong>Corte de unhas</strong><span>Cuidado rápido e seguro</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20um%20pacote%20de%20banho%20e%20tosa." target="_blank" rel="noopener"><img src="assets/images/bowl.svg" alt=""><strong>Pacotes</strong><span>Consulte planos disponíveis</span></a>
+          </div>
+        </div>
+
+        <div class="catalog-panel" id="panel-chaveiro" role="tabpanel" aria-labelledby="tab-chaveiro" data-panel="chaveiro" hidden>
+          <div class="catalog-panel-intro">
+            <img src="assets/images/icon-keys.png" alt="Chaves residenciais e automotivas">
+            <div><span>Chaveiro</span><strong>Soluções rápidas para sua segurança</strong></div>
+          </div>
+          <div class="catalog-items">
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Preciso%20fazer%20uma%20c%C3%B3pia%20de%20chave%20residencial." target="_blank" rel="noopener"><img src="assets/images/key.svg" alt=""><strong>Chaves residenciais</strong><span>Cópias de diversos modelos</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Preciso%20de%20uma%20chave%20automotiva." target="_blank" rel="noopener"><img src="assets/images/keys.svg" alt=""><strong>Chaves automotivas</strong><span>Cópia e codificação</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20controles%20de%20port%C3%A3o." target="_blank" rel="noopener"><img src="assets/images/key.svg" alt=""><strong>Controles</strong><span>Portões e alarmes</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Preciso%20trocar%20uma%20fechadura." target="_blank" rel="noopener"><img src="assets/images/keys.svg" alt=""><strong>Fechaduras</strong><span>Troca e manutenção</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Preciso%20de%20abertura%20de%20porta." target="_blank" rel="noopener"><img src="assets/images/key.svg" alt=""><strong>Abertura de portas</strong><span>Atendimento rápido</span></a>
+            <a href="https://wa.me/5511980358689?text=Ol%C3%A1%21%20Preciso%20de%20um%20servi%C3%A7o%20de%20chaveiro." target="_blank" rel="noopener"><img src="assets/images/keys.svg" alt=""><strong>Outros serviços</strong><span>Fale com o chaveiro</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section shell" id="marcas" aria-label="Marcas de ração">
+      <h2>Rações das melhores marcas</h2>
+      <div class="brand-logos">
+        <span class="brand-logo pedigree">Pedigree</span>
+        <span class="brand-logo whiskas">whiskas</span>
+        <span class="brand-logo premier">PremierPet <small>ALIMENTOS DE ALTA QUALIDADE</small></span>
+        <span class="brand-logo golden">Golden <small>PREMIUM ESPECIAL</small></span>
+        <span class="brand-logo purina">PURINA</span>
+        <span class="brand-logo royal">ROYAL CANIN</span>
+        <span class="brand-logo quatree">Quatree</span>
+      </div>
+    </section>
+
+    <section class="promo-grid shell" id="produtos" aria-label="Produtos e serviços em destaque">
+      <a class="promo-card" href="#catalogo" data-catalog="pet-shop">
+        <img src="assets/images/promo-toys-v2.png" alt="Cachorro brincando com uma bola azul">
+        <span class="promo-caption">Brinquedos e<br>acessórios</span>
+        <span class="promo-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="promo-card" href="#catalogo" data-catalog="racoes">
+        <img src="assets/images/promo-feed-v2.png" alt="Tigelas de ração em uma loja para animais">
+        <span class="promo-caption">Rações para<br>cães e gatos</span>
+        <span class="promo-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="promo-card" href="#catalogo" data-catalog="chaveiro">
+        <img src="assets/images/promo-keys-v2.png" alt="Chaves automotivas e residenciais sobre balcão de madeira">
+        <span class="promo-caption">Chaves automotivas<br>e residenciais</span>
+        <span class="promo-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="shell contact-grid">
+        <article class="contact-block location">
+          <h2><span class="contact-icon map-pin" aria-hidden="true"></span>Nossa localização</h2>
+          <p>Rua Embaixatriz Dora de Vasconcelos, 666<br>Vila do Castelo - São Paulo/SP - CEP 04438-240</p>
+          <iframe
+            class="map-image"
+            title="Mapa da Pet Chaveiro"
+            src="https://www.google.com/maps?q=Rua%20Embaixatriz%20Dora%20de%20Vasconcelos%2C%20666%2C%20Vila%20do%20Castelo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004438-240&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </article>
+
+        <article class="contact-block hours">
+          <h2><span class="contact-icon clock" aria-hidden="true"></span>Horário de funcionamento</h2>
+          <dl>
+            <div>
+              <dt>Segunda a Sexta</dt>
+              <dd>8h às 19h</dd>
+            </div>
+            <div>
+              <dt>Sábado</dt>
+              <dd>8h às 18h</dd>
+            </div>
+            <div>
+              <dt>Domingo</dt>
+              <dd>Fechado</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="contact-block talk">
+          <h2><span class="contact-icon phone" aria-hidden="true"></span>Fale com a gente</h2>
+          <a class="wide-action whatsapp" href="https://wa.me/5511980358689" target="_blank" rel="noopener">
+            <img src="assets/images/wh-icon.svg" alt="">
+            <span>WhatsApp</span>
+          </a>
+          <a class="wide-action call" href="tel:+5511980358689">
+            <span class="phone-mark" aria-hidden="true"></span>
+            <span>Ligar agora</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo_rodape.png" alt="Pet Chaveiro">
+      </div>
+      <div class="footer-benefits" aria-label="Diferenciais">
+        <div>
+          <span class="footer-icon shield" aria-hidden="true"></span>
+          <p>Produtos de<br>qualidade</p>
+        </div>
+        <div>
+          <span class="footer-icon heart" aria-hidden="true"></span>
+          <p>Atendimento<br>com carinho</p>
+        </div>
+        <div>
+          <span class="footer-icon lock" aria-hidden="true"></span>
+          <p>Serviços rápidos<br>e confiáveis</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

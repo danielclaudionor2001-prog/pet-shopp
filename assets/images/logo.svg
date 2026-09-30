@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 320 96" fill="none">
+  <rect width="320" height="96" rx="12" fill="#fff"/>
+  <g font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="28">
+    <text x="70" y="60" fill="#5a331f">PET</text>
+    <text x="130" y="60" fill="#f2922b">CHAVEIRO</text>
+  </g>
+</svg>
